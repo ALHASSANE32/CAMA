@@ -1,0 +1,10 @@
+body {
+    background-image: url('cama.jpg'); /* Chemin de l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la page */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}

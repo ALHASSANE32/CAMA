@@ -1,0 +1,307 @@
+/* --- Styles globaux --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #caeb10;
+    color: #333;
+    background-image: url('banniere.jpg'); /* Image en arrière-plan */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f7f8;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* --- En-tête --- */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(10, 6, 228, 0.7); /* Fond semi-transparent */
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* --- Section principale --- */
+main {
+    padding: 20px;
+}
+
+section {
+    background: rgba(247, 245, 245, 0.6); /* Fond semi-transparent */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+section h2 {
+    color: #1900ff; /* Couleur d'accentuation */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* --- Styles spécifiques aux sections --- */
+#apropos {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#apropos h1 {
+    font-size: 2.5em;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#apropos h2 {
+    font-size: 1.8em;
+    color: #555;
+    margin-top: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 5px;
+}
+
+#apropos p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#apropos ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+#apropos ul li {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+#apropos h2:hover {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+/* --- Formulaire de contact --- */
+#contact ul {
+    display: flex;
+    list-style: none;
+    padding-left: 20%;
+}
+
+#contact ul li {
+    padding-left: 10%;
+}
+
+#mail {
+    display: flex;
+}
+
+#mail h3 {
+    margin-top: 1px;
+    margin-left: 2%;
+    color: #160303;
+}
+#contact {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-button {
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    background: #0078d7; /* Default color for Skype */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.photo-de-profil {
+    width: 200px; /* Définir la taille de l'image */
+    height: 200px; /* Définir la taille de l'image */
+    border-radius: 50%; /* Arrondir l'image */
+    object-fit: cover; /* Adapter l'image à la taille définie sans la déformer */
+    margin-top: 20px; /* Espace entre l'image et le texte */
+}
+
+
+.social-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.social-button.telegram {
+    background: #0088cc;
+}
+
+.social-button.skype {
+    background: #0078d7;
+}
+
+.social-button.whatsapp {
+    background: #25d366;
+    
+}
+
+.social-button:hover {
+    opacity: 0.9;
+}
+
+
+/* --- Boutons --- */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    background: transparent;
+    color: #ff9800;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+a.button:hover {
+    background: #ff9800;
+    color: #000;
+}
+
+/* --- Compétences --- */
+.competences {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.competences h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #22f70e;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.competence {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.competence:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.competence h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1100ff;
+}
+
+.competence p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* --- Pied de page --- */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsivité --- */
+@media (max-width: 600px) {
+    #apropos {
+        padding: 15px;
+    }
+
+    #apropos h1 {
+        font-size: 2em;
+    }
+
+    #apropos h2 {
+        font-size: 1.5em;
+    }
+}
